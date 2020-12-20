@@ -14,9 +14,12 @@ class SignUp extends Component {
       [e.target.id]: e.target.value
     })
   }
+  
   handleSubmit = (e) => {
+    //userid pass korte hbe
     e.preventDefault();
     this.props.signUp(this.state);
+    this.props.history.push('/')
   }
   render() {
     const {auth,authError} = this.props;
@@ -55,7 +58,8 @@ class SignUp extends Component {
 const mapStateToProps = (state) => {
   return {
     auth: state.firebase.auth,
-    authError: state.auth.authError
+    authError: state.auth.authError,
+    profile:state.firebase.profile
   }
 }
 

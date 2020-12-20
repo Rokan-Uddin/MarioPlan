@@ -7,7 +7,7 @@ return (
     <ul className='right'>
         <li> <NavLink to ='/create'>New Project</NavLink> </li>
         <li><a onClick={props.signOut}>Log Out</a></li>
-        <li> <NavLink to ='/' className='btn btn-floating pink lighten'>RU</NavLink> </li>
+        <li> <NavLink to ='/' className='btn btn-floating pink lighten'>{props.profile.initials}</NavLink> </li>
     </ul>
 )
 }
