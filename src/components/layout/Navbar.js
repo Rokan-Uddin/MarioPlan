@@ -10,8 +10,7 @@ const Navbar=(props) => {
         <nav className='nav-wrapper grey darken-3'>
             <div className="container">
                 <Link to='/' className='brand-logo'>MarioPlan</Link>
-                <SignedInLinks />
-                <SignedOutLinks />
+                {auth.uid ? <SignedInLinks /> : <SignedOutLinks /> }
             </div>
         </nav>
     );
