@@ -5,7 +5,6 @@ import { compose } from 'redux'
 
 const ProjectDetails = (props) => {
   const { project } = props;
-  console.log(project)
   if (project) {
     return (
       <div className="container section project-details">
