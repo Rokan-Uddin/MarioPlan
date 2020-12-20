@@ -1,7 +1,7 @@
 export const createProject = (project) => {
-    return (dispatch, getState, {getFirebase,getFirestore}) => {
+    return (dispatch, getState, {getFirebase}) => {
 
-      const firestore = getFirestore();
+      const firestore = getFirebase().firestore();
       firestore.collection('projects').add({
         ...project,
         authorFirstName: 'Rokan',
