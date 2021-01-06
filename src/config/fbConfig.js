@@ -3,13 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAJz4RTm6ZAmwAXgoy3zoispD93TYjIxMo",
-  authDomain: "project-firebase-44a6f.firebaseapp.com",
-  projectId: "project-firebase-44a6f",
-  storageBucket: "project-firebase-44a6f.appspot.com",
-  messagingSenderId: "575083348378",
-  appId: "1:575083348378:web:7bd835141fcca788457a23",
-  measurementId: "G-QD3DS6RM90"
+  apiKey: "AIzaSyC8IERwXrYV2l6a8paGx-8Cs_0dG0lVEWE",
+  authDomain: "marioplan-bd043.firebaseapp.com",
+  projectId: "marioplan-bd043",
+  storageBucket: "marioplan-bd043.appspot.com",
+  messagingSenderId: "338111829435",
+  appId: "1:338111829435:web:b2115e26d49cf3a7f9a09e",
+  measurementId: "G-S00HBE11ST"
 };
 firebase.initializeApp(firebaseConfig);
 firebase.firestore().settings({ timestampsInSnapshots: true });
